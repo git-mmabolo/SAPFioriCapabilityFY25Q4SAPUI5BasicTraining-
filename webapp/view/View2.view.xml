@@ -1,6 +1,45 @@
-<mvc:View controllerName="project2.controller.View2"
+<mvc:View xmlns:core="sap.ui.core" controllerName="project2.controller.View2"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox id="vBox1"  class="sapUiTinyMargin" alignItems="Center">
+                <HBox id="hBox1">
+                    <Text id="txt1" width="100px" text="Name:" class="sapUiTinyMargin"/> 
+                    <Input id="namInput1" width="450px" />    
+                </HBox>
+
+                <HBox id="hBox2">
+                    <Text id="txt2" width="100px" text="Street/No.:" class="sapUiTinyMargin"/> 
+                    <Input id="namInput2" width="300px" />    
+                    <Input id="namInput3" width="150px" /> 
+                </HBox>
+
+                <HBox id="hBox3">
+                    <Text id="txt3" width="100px" text="ZIP Code/City:" class="sapUiTinyMargin"/> 
+                    <Input id="namInput4" width="150px" />    
+                    <Input id="namInput5" width="300px" /> 
+                </HBox>
+
+                <HBox id="hBox4">
+                    <Text id="txt4" width="100px" text="Country" class="sapUiTinyMargin"/>
+                    <Select id="select1" width="450px">
+                        <items>
+                            <core:Item key="PH" text="Philippines" />
+                            <core:Item key="US" text="United States of America" />
+                            <core:Item key="SG" text="Singapore" />
+                        </items>
+                    </Select>
+                </HBox>
+                
+            </VBox>
+
+            <VBox id="vBox2" class="sapUiTinyMargin" alignItems="End">
+                <HBox id="hBox5">
+                    <Button text="Save" id="saveBtn"/> 
+                    <Button text="Clear" id="clrBtn" press="onClearInput"/>
+                </HBox>
+            </VBox>
+        </content>
     </Page>
 </mvc:View>
