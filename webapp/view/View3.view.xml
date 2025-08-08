@@ -1,10 +1,9 @@
-<mvc:View xmlns:core="sap.ui.core" controllerName="project2.controller.View2"
+<mvc:View xmlns:core="sap.ui.core" controllerName="project2.controller.View3"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content>
-            <Button text="Save" id="saveBtn"/> 
-            <Button text="Clear" id="clrBtn" press="onClearInput"/>
+            <Input id="valTxt" width="450px" editable="false" /> 
         </content>
     </Page>
 </mvc:View>
