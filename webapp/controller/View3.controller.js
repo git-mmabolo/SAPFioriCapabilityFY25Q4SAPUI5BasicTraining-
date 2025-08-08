@@ -4,8 +4,7 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend("project2.controller.View3", {
-        onSetNewValue() {
-
+        onInit() {
         }
     });
 });

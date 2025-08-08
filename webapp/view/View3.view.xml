@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" controllerName="project2.controller.View3"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    <Page id="pageView3" title="{i18n>title}">
         <content>
             <Input id="valTxt" width="450px" editable="false" /> 
         </content>
