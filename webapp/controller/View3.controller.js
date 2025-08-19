@@ -9,6 +9,7 @@ sap.ui.define([
             this.generateTriangle();
             this.generateX(5);
             this.generateColors();
+            this.generateNameAge();
         },
 
         generateTriangle: function() { //exercise3 item2
@@ -64,6 +65,24 @@ sap.ui.define([
                 }this.byId("eXer3txt3").setValue(oOutput);
                 
         },
+
+        generateNameAge(){ //exercise3 item6
+            var it_rec = [
+                { Name: "Gibo", Age: "16", Skillset: [{ Skill: "SAP UI5" }, { Skill: "SAP HANA" }] },
+                { Name: "Patrick", Age: "22", Skillset: [{ Skill: "SAP UI5" }, { Skill: "SAP HANA" }, { Skill: "SAP ABAP" }] },
+                { Name: "MJ", Age: "24", Skillset: [{ Skill: "SAP HANA" }] },
+            ];
+
+            var oOutput = "";
+            it_rec.forEach(function (recRow) {
+                var recSkillsetLength = recRow.Skillset.length;
+                if(recSkillsetLength >= 3){
+                    oOutput = "Person with the highest number of skillset" + "\n" + "Name: " + recRow.Name + "\n" + "Age: " + recRow.Age;
+                }
+            });
+            this.byId("eXer3txt4").setValue(oOutput);
+        },
+        
             
         onPressConvert() { //exercise3 item1
 

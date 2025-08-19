@@ -87,7 +87,15 @@
           "target": [
             "TargetView3"
           ]
-        }
+        },
+
+        {
+          "name": "RouteView4",
+          "pattern": "View4",
+          "target": [
+            "TargetView4"
+          ]
+        }        
 
       ],
       "targets": {

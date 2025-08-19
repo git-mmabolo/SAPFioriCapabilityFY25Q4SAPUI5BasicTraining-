@@ -20,7 +20,11 @@
 
                 <HBox id="exer3VBox4" class="sapUiSmallMargin" alignItems="Center">
                     <TextArea id="eXer3txt3" rows="10" width="400px" editable="false"/>
-                </HBox>                
+                </HBox>    
+
+                <HBox id="exer3VBox5" class="sapUiSmallMargin" alignItems="Center">
+                    <TextArea id="eXer3txt4" rows="10" width="400px" editable="false"/>
+                </HBox>                            
             </VBox>                
         </content>
     </Page>
