@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" controllerName="project2.controller.View3"
-    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="pageView3" title="{i18n>title}">
+    <Page id="pageView3" title="titleView3">
         <content>
             <VBox id="exer3VBox1" class="sapUiSmallMargin" alignItems="Center">
                 <HBox id="exer3HBox1" class="sapUiSmallMargin" alignItems="Center">
@@ -24,8 +24,14 @@
 
                 <HBox id="exer3VBox5" class="sapUiSmallMargin" alignItems="Center">
                     <TextArea id="eXer3txt4" rows="10" width="400px" editable="false"/>
-                </HBox>                            
-            </VBox>                
+                </HBox> 
+                <HBox id="backBtn">
+                    <OverflowToolbar id="idOFTFooterReview">
+                        <ToolbarSpacer id="idTSpacerFooterReview"/>
+                        <Button id="idBtnBack" text="BACK" tooltip="Back" press="onPressBack"/>
+                    </OverflowToolbar>                
+                </HBox>                           
+            </VBox>                         
         </content>
     </Page>
 </mvc:View>
