@@ -115,5 +115,9 @@ sap.ui.define([
             }
         },
 
+        onPressBack: function () {
+            this.getOwnerComponent().getRouter().navTo("RouteView2")
+        }
+
     });
 });

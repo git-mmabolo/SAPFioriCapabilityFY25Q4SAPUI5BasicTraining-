@@ -18,7 +18,12 @@ sap.ui.define([
             oInput5.setValue("");
             oInput6.setValue("");
             MesageToast.show("Input Field Cleared!");
-        }
+        },
+        
+        onPressView3: function () {
+            //oRouter.navTo("RouteView3", {}, true);
+            this.getOwnerComponent().getRouter().navTo("RouteView3")
+        }        
 /*        
         onInit() {
            

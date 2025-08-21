@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" controllerName="project2.controller.View2"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    <Page id="page" title="{i18n>titleView2}">
         <content>
             <VBox id="vBox1"  class="sapUiTinyMargin" alignItems="Center">
                 <HBox id="hBox1">
@@ -39,6 +39,12 @@
                     <Button text="Save" id="saveBtn"/> 
                     <Button text="Clear" id="clrBtn" press="onClearInput"/>
                 </HBox>
+            </VBox>
+            <VBox id="view3Btn">
+                <OverflowToolbar id="idOView3">
+                    <ToolbarSpacer id="idView3"/>
+                    <Button id="idBtnView3" text="Activity 3" tooltip="Activity 3" press="onPressView3"/>
+                </OverflowToolbar>             
             </VBox>
         </content>
     </Page>
